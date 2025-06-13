@@ -1,0 +1,297 @@
+:root {
+  --white-color: #ffffff;
+  --stone-color-100: #f3e6d8;
+  --stone-color-150: #e4ded8;
+  --stone-color-600: #5f574e;
+  --stone-color-900: #302d2c;
+  --brown-color-800: #854632;
+  --rose-color-800: #7b284f;
+  --rose-color-50: #fff5fa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0;
+}
+
+.container__article--header img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.container__article--main div h1 {
+  font-family: "young serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: var(--stone-color-900);
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article--main div h1 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 35.25em) {
+  .container__article--main div h1 {
+    font-size: 1rem;
+  }
+}
+.container__article--main div p {
+  color: var(--stone-color-600);
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article--main div p {
+    font-size: 0.7rem;
+  }
+}
+.container__article--main--preparation {
+  background-color: var(--rose-color-50);
+  padding: 1.2rem 1rem;
+  border-radius: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+.container__article--main--preparation h2 {
+  color: var(--rose-color-800);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article--main--preparation h2 {
+    font-size: 0.8rem;
+  }
+}
+.container__article--main--preparation ul {
+  position: relative;
+  list-style: none;
+}
+.container__article--main--preparation ul li {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--stone-color-600);
+  text-indent: 2rem;
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article--main--preparation ul li {
+    font-size: 0.7rem;
+  }
+}
+.container__article--main--preparation ul li::before {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: var(--rose-color-800);
+  margin-left: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1rem;
+  transform: translateY(220%);
+}
+.container__article--main--ingredients {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid var(--stone-color-150);
+  padding-bottom: 1.2rem;
+}
+.container__article--main--ingredients h3 {
+  color: var(--brown-color-800);
+  font-family: "young serif", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article--main--ingredients h3 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 35.25em) {
+  .container__article--main--ingredients h3 {
+    font-size: 1rem;
+  }
+}
+.container__article--main--ingredients ul {
+  position: relative;
+  list-style: none;
+}
+.container__article--main--ingredients ul li {
+  text-indent: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--stone-color-600);
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article--main--ingredients ul li {
+    font-size: 0.7rem;
+  }
+}
+.container__article--main--ingredients ul li::before {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: var(--brown-color-800);
+  margin-left: 1.3rem;
+  position: absolute;
+  left: -1rem;
+  transform: translateY(230%);
+}
+.container__article--main--instructions {
+  border-bottom: 0.1rem solid var(--stone-color-150);
+  padding-bottom: 1.2rem;
+}
+.container__article--main--instructions h4 {
+  color: var(--brown-color-800);
+  font-family: "young serif", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article--main--instructions h4 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 35.25em) {
+  .container__article--main--instructions h4 {
+    font-size: 1rem;
+  }
+}
+.container__article--main--instructions ol li {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  color: var(--stone-color-600);
+  margin: 0 0 0.3rem 1.3rem;
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article--main--instructions ol li {
+    font-size: 0.7rem;
+  }
+}
+.container__article--main--instructions ol li::marker {
+  color: var(--brown-color-800);
+  font-weight: 600;
+}
+.container__article--footer h5 {
+  color: var(--brown-color-800);
+  font-family: "young serif", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article--footer h5 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 35.25em) {
+  .container__article--footer h5 {
+    font-size: 1rem;
+  }
+}
+.container__article--footer p {
+  font-size: 0.8rem;
+  color: var(--stone-color-600);
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article--footer p {
+    font-size: 0.7rem;
+  }
+}
+.container__article--footer div div {
+  display: flex;
+  align-items: center;
+  gap: 11rem;
+}
+@media only screen and (max-width: 25.125em) {
+  .container__article--footer div div {
+    gap: 5rem;
+  }
+}
+.container__article--footer div div:not(:last-child) {
+  border-bottom: 0.1rem solid var(--stone-color-150);
+}
+.container__article--footer div div p {
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+}
+.container__article--footer div div .u-kcal {
+  color: var(--brown-color-800);
+  font-weight: 600;
+}
+.container__article--footer div div .u-0g {
+  color: var(--brown-color-800);
+  font-weight: 600;
+  margin-left: 0.9rem;
+}
+.container__article--footer div div .u-20g {
+  color: var(--brown-color-800);
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.container__article--footer div div .u-22g {
+  color: var(--brown-color-800);
+  font-weight: 600;
+  margin-left: 1.8rem;
+}
+
+.container {
+  background-color: var(--stone-color-100);
+  padding: 5rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__article {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 40.25em) {
+  .container__article {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 35.25em) {
+  .container__article {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 30.25em) {
+  .container__article {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 25.18em) {
+  .container__article {
+    width: 20rem;
+  }
+}
+
+/*# sourceMappingURL=styles.comp.css.map */
