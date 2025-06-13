@@ -1,0 +1,296 @@
+.container {
+  &__article {
+    // HEADER
+    &--header img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+
+    // MAIN
+    &--main {
+      div h1 {
+        font-family: "young serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        color: var(--stone-color-900);
+
+        // MEDIA QUERY
+        @media only screen and (max-width: $bp-medium) {
+          & {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          & {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      div p {
+        color: var(--stone-color-600);
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+
+        // MEDIA QUERY
+        @media only screen and (max-width: $bp-extra-smallest) {
+          & {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      // PREPARATION SECTION
+      &--preparation {
+        background-color: var(--rose-color-50);
+        padding: 1.2rem 1rem;
+        border-radius: 0.9rem;
+        margin-bottom: 1.2rem;
+
+        & h2 {
+          color: var(--rose-color-800);
+          font-size: 0.9rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+
+          // MEDIA QUERY
+          @media only screen and (max-width: $bp-medium) {
+            & {
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        & ul {
+          position: relative;
+          list-style: none;
+
+          & li {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--stone-color-600);
+            text-indent: 2rem;
+
+            // MEDIA QUERY
+            @media only screen and (max-width: $bp-extra-smallest) {
+              & {
+                font-size: 0.7rem;
+              }
+            }
+          }
+
+          // MARKER HACK
+          & li::before {
+            content: "";
+            width: 0.2rem;
+            height: 0.2rem;
+            background-color: var(--rose-color-800);
+            margin-left: 1.5rem;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -1rem;
+            transform: translateY(220%);
+          }
+        }
+      }
+
+      // INGREDIENTS SECTION
+      &--ingredients {
+        margin-bottom: 1rem;
+        border-bottom: 0.1rem solid var(--stone-color-150);
+        padding-bottom: 1.2rem;
+
+        & h3 {
+          color: var(--brown-color-800);
+          font-family: "young serif", serif;
+          font-size: 1.5rem;
+          font-weight: 300;
+          font-style: normal;
+          margin-bottom: 1rem;
+
+          // MEDIA QUERY
+          @media only screen and (max-width: $bp-medium) {
+            & {
+              font-size: 1.2rem;
+            }
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            & {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        & ul {
+          position: relative;
+          list-style: none;
+
+          & li {
+            text-indent: 1rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--stone-color-600);
+            margin-left: 1rem;
+
+            // MEDIA QUERY
+            @media only screen and (max-width: $bp-extra-smallest) {
+              & {
+                font-size: 0.7rem;
+              }
+            }
+          }
+
+          // MARKER HACK
+          & li::before {
+            content: "";
+            width: 0.2rem;
+            height: 0.2rem;
+            background-color: var(--brown-color-800);
+            margin-left: 1.3rem;
+
+            position: absolute;
+            left: -1rem;
+            transform: translateY(230%);
+          }
+        }
+      }
+
+      // INSTRUCTIONS SECTION
+      &--instructions {
+        border-bottom: 0.1rem solid var(--stone-color-150);
+        padding-bottom: 1.2rem;
+
+        & h4 {
+          color: var(--brown-color-800);
+          font-family: "young serif", serif;
+          font-size: 1.5rem;
+          font-weight: 300;
+          font-style: normal;
+          margin-bottom: 1rem;
+
+          // MEDIA QUERY
+          @media only screen and (max-width: $bp-medium) {
+            & {
+              font-size: 1.2rem;
+            }
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            & {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        & ol {
+          & li {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+            color: var(--stone-color-600);
+            margin: 0 0 0.3rem 1.3rem;
+
+            // MEDIA QUERY
+            @media only screen and (max-width: $bp-extra-smallest) {
+              & {
+                font-size: 0.7rem;
+              }
+            }
+          }
+
+          & li::marker {
+            color: var(--brown-color-800);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    // FOOTER SECTION
+    &--footer {
+      & h5 {
+        color: var(--brown-color-800);
+        font-family: "young serif", serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 1rem;
+
+        // MEDIA QUERY
+        @media only screen and (max-width: $bp-medium) {
+          & {
+            font-size: 1.2rem;
+          }
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          & {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      & p {
+        font-size: 0.8rem;
+        color: var(--stone-color-600);
+        margin-bottom: 1rem;
+
+        // MEDIA QUERY
+        @media only screen and (max-width: $bp-extra-smallest) {
+          & {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      & div div {
+        display: flex;
+        align-items: center;
+        gap: 11rem;
+
+        // MEDIA QUERY
+        @media only screen and (max-width: $bp-extra-extra-smallest) {
+          & {
+            gap: 5rem;
+          }
+        }
+      }
+
+      & div div:not(:last-child) {
+        border-bottom: 0.1rem solid var(--stone-color-150);
+      }
+
+      & div div p {
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+      }
+
+      & div div .u-kcal {
+        color: var(--brown-color-800);
+        font-weight: 600;
+      }
+
+      & div div .u-0g {
+        color: var(--brown-color-800);
+        font-weight: 600;
+        margin-left: 0.9rem;
+      }
+
+      & div div .u-20g {
+        color: var(--brown-color-800);
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+
+      & div div .u-22g {
+        color: var(--brown-color-800);
+        font-weight: 600;
+        margin-left: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--stone-color-100);
+  padding: 5rem 0 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__article {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    width: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    // MEDIA QUERY
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 35rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      & {
+        width: 30rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      & {
+        width: 25rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-extra-smallest) {
+      & {
+        width: 20rem;
+      }
+    }
+  }
+}
