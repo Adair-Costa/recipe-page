@@ -27,10 +27,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Built with
 
 - Semantic HTML5 markup
-- BEM component
+- BEM methodology
 - SASS
 - CSS custom properties
-- Flexbox
+- Flexbox layout
 - Desktop-first workflow
 
 ## Author
